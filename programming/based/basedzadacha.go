@@ -10,7 +10,7 @@ import (
 func main() {
 	time, err := ntp.Time("time.nist.gov")
 	if err != nil {
-		fmt.Println("hui: ", err)
+		fmt.Println(err)
 		os.Exit(1)
 	}
 	fmt.Println(time)
